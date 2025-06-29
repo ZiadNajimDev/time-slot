@@ -1,0 +1,29 @@
+.toggle__button {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    border-radius: 20px;
+    background: #e4e4e7;
+    border: none;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+  }
+  .circle {
+    position: absolute;
+    left: 10%;
+    height: 16px;
+    width: 16px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.199),
+                0 1px 4px rgba(0, 0, 0, 0.199);
+    transition: transform .5s ease;
+  }
+  .circle__active {
+    transform: translateX(130%);
+    box-shadow: none;
+  }
+  .button__active {
+    background: #16a34a;
+  }

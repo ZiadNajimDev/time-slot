@@ -1,0 +1,49 @@
+body,
+.main,
+.row,
+.time__card,
+.time__card__header,
+.time__card_timers,
+.button__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  max-width: 700px;
+}
+.time__card {
+  min-width: 370px;
+  border-radius: 20px;
+  gap: 1rem;
+  flex-direction: column;
+}
+.time__card__header {
+  max-width: 309px;
+  width: 100%;
+  justify-content: space-between;
+}
+.time__card_timers {
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .time__card {
+    min-width: 532px;
+  }
+  .time__card__header {
+    max-width: 466px;
+  }
+}
+@media (min-width: 1024px) {
+  .time__card {
+    min-width: 532px;
+  }
+  .time__card__header {
+    max-width: 466px;
+  }
+}

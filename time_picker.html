@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="main" id="main">
+      <svg
+        id="theme-button"
+        xmlns="http://www.w3.org/2000/svg"
+        width="2em"
+        height="2em"
+        viewBox="0 0 24 24"
+      >
+        <g fill="none">
+          <path
+            id="1"
+            fill="#000"
+            d="M2.75 12A9.25 9.25 0 0 0 12 21.25V2.75A9.25 9.25 0 0 0 2.75 12"
+          />
+          <path
+            id="2"
+            stroke="#000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M12 21.25a9.25 9.25 0 0 0 0-18.5m0 18.5a9.25 9.25 0 0 1 0-18.5m0 18.5V2.75"
+          />
+        </g>
+      </svg>
+      <div class="time__card" id="monday">
+        <div class="time__card__header">
+          <p>Monday</p>
+          <button
+            class="toggle__button"
+            id="toggle__button"
+            data-action="toggle"
+          >
+            <div class="circle" id="circle"></div>
+          </button>
+        </div>
+        <div class="time__card_timers" id="time__card_timers"></div>
+        <button
+          class="time__card_button hidden"
+          id="time__card_button"
+          data-action="addCard"
+        >
+          Add More
+        </button>
+      </div>
+      <div class="time__card" id="tuesday">
+        <div class="time__card__header">
+          <p>tuesday</p>
+          <button
+            class="toggle__button"
+            id="toggle__button"
+            data-action="toggle"
+          >
+            <div class="circle" id="circle"></div>
+          </button>
+        </div>
+        <div class="time__card_timers" id="time__card_timers"></div>
+        <button
+          class="time__card_button hidden"
+          id="time__card_button"
+          data-action="addCard"
+        >
+          Add More
+        </button>
+      </div>
+      <div class="time__card" id="wednesday">
+        <div class="time__card__header">
+          <p>wednesday</p>
+          <button
+            class="toggle__button"
+            id="toggle__button"
+            data-action="toggle"
+          >
+            <div class="circle" id="circle"></div>
+          </button>
+        </div>
+        <div class="time__card_timers" id="time__card_timers"></div>
+        <button
+          class="time__card_button hidden"
+          id="time__card_button"
+          data-action="addCard"
+        >
+          Add More
+        </button>
+      </div>
+      <div class="time__card" id="thursday">
+        <div class="time__card__header">
+          <p>thursday</p>
+          <button
+            class="toggle__button"
+            id="toggle__button"
+            data-action="toggle"
+          >
+            <div class="circle" id="circle"></div>
+          </button>
+        </div>
+        <div class="time__card_timers" id="time__card_timers"></div>
+        <button
+          class="time__card_button hidden"
+          id="time__card_button"
+          data-action="addCard"
+        >
+          Add More
+        </button>
+      </div>
+      <div class="time__card" id="friday">
+        <div class="time__card__header">
+          <p>friday</p>
+          <button
+            class="toggle__button"
+            id="toggle__button"
+            data-action="toggle"
+          >
+            <div class="circle" id="circle"></div>
+          </button>
+        </div>
+        <div class="time__card_timers" id="time__card_timers"></div>
+        <button
+          class="time__card_button hidden"
+          id="time__card_button"
+          data-action="addCard"
+        >
+          Add More
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
