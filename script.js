@@ -5,6 +5,12 @@ const WeeklySchedule = {
   thursday: { isActive: false, timeSlots: [] },
   friday: { isActive: false, timeSlots: [] },
 };
+const theme = localStorage.getItem("localTheme");
+if (theme === "dark"){
+  document.body.classList.add("dark--mode");
+document.getElementById("1").classList.add("fill");
+document.getElementById("2").classList.add("stroke");
+}
 let idCardCounter = 0;
 document.getElementById("main").addEventListener("click", (event) => {
   const action = event.target.getAttribute("data-action");
@@ -110,5 +116,9 @@ document.getElementById("theme-button").addEventListener("click", () => {
 document.body.classList.toggle("dark--mode");
 document.getElementById("1").classList.toggle("fill");
 document.getElementById("2").classList.toggle("stroke");
-
+if(document.body.classList.contains("dark--mode")){
+  localStorage.setItem("localTheme", "dark");
+} else {
+  localStorage.setItem("localTheme", "dark");
+}
 });
