@@ -10,6 +10,10 @@ if (theme === "dark"){
   document.body.classList.add("dark--mode");
 document.getElementById("1").classList.add("fill");
 document.getElementById("2").classList.add("stroke");
+} else {
+  document.body.classList.remove("dark--mode");
+  document.getElementById("1").classList.remove("fill");
+  document.getElementById("2").classList.remove("stroke");
 }
 let idCardCounter = 0;
 document.getElementById("main").addEventListener("click", (event) => {
@@ -119,6 +123,6 @@ document.getElementById("2").classList.toggle("stroke");
 if(document.body.classList.contains("dark--mode")){
   localStorage.setItem("localTheme", "dark");
 } else {
-  localStorage.setItem("localTheme", "dark");
+  localStorage.setItem("localTheme", "light");
 }
 });
