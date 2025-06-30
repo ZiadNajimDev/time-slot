@@ -89,3 +89,6 @@ input[type="time"]:active {
 .stroke {
   stroke: white;
 }
+svg {
+  cursor: pointer;
+}
